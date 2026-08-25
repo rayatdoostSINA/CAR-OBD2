@@ -1,0 +1,6 @@
+{
+  "name": "MultiGauge OBD Universal",
+  "description": "Smart Car Monitor and Diagnostic Tool with ELM327 support, multi-style HUD digital gauges, offline Persian/English DTC database, and real-time vehicle telemetry.",
+  "requestFramePermissions": ["bluetooth"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "MultiGauge OBD Universal",
+  "short_name": "MultiGauge",
+  "description": "Smart car monitor and basic OBD-II diagnostics",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#08111f",
+  "theme_color": "#08111f",
+  "lang": "en",
+  "dir": "auto"
+}

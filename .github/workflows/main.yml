@@ -1,0 +1,11 @@
+name: Legacy Pages workflow (manual only)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  disabled:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This legacy workflow is disabled."

@@ -1,0 +1,400 @@
+[
+  {
+    "code": "P0420",
+    "system": "Catalyst & Exhaust",
+    "persianSystem": "کاتالیزور و اگزوز",
+    "englishDescription": "Catalyst System Efficiency Below Threshold (Bank 1)",
+    "persianDescription": "بازدهی سیستم کاتالیست کمتر از حد استاندارد است (بانک ۱)",
+    "severity": "Medium",
+    "persianSeverity": "متوسط",
+    "possibleCauses": [
+      "Faulty or degraded Catalytic Converter",
+      "Defective upstream or downstream Oxygen Sensor (O2)",
+      "Exhaust manifold leak or cracked exhaust pipe",
+      "Engine oil or coolant entering exhaust (cylinder head gasket issue)",
+      "Spark plug misfire causing unburnt fuel into catalyst"
+    ],
+    "persianPossibleCauses": [
+      "خرابی یا گرفتگی کاتالیزور (به پایان رسیدن عمر مفید)",
+      "خرابی سنسور اکسیژن بالا یا پایین دست",
+      "نشتی در منیفولد یا لوله اگزوز قبل از کاتالیزور",
+      "ورود روغن یا ضدیخ به محفظه احتراق و آلودگی کاتالیست",
+      "خام‌سوزی به دلیل شمع یا کوئل معیوب"
+    ],
+    "symptoms": [
+      "Check Engine Light (MIL) illuminated",
+      "Slight drop in fuel economy",
+      "Possible sulfur / rotten egg smell from exhaust"
+    ],
+    "persianSymptoms": [
+      "روشن شدن چراغ چک خودرو",
+      "افزایش جزئی مصرف بنزین",
+      "بوی نامطبوع گوگرد یا گوگردی از اگزوز"
+    ],
+    "recommendedAction": "Inspect exhaust for physical leaks. Check O2 sensor live switching graphs before replacing expensive catalytic converter.",
+    "persianRecommendedAction": "ابتدا ولتاژ سنسور اکسیژن دوم را در نمودار بررسی کرده و نشتی اگزوز را بررسی کنید قبل از تعویض کاتالیزور."
+  },
+  {
+    "code": "P0171",
+    "system": "Fuel & Air Metering",
+    "persianSystem": "سیستم سوخت و هوای ورودی",
+    "englishDescription": "System Too Lean (Bank 1)",
+    "persianDescription": "مخلوط سوخت و هوا بیش از حد رقیق (فقیر/کم‌سوخت) است (بانک ۱)",
+    "severity": "High",
+    "persianSeverity": "بالا",
+    "possibleCauses": [
+      "Intake manifold vacuum leak or damaged intake hose",
+      "Dirty or faulty Mass Air Flow (MAF) / MAP sensor",
+      "Clogged fuel filter or weak fuel pump pressure",
+      "Clogged or sticking fuel injectors",
+      "Faulty PCV valve or positive crankcase ventilation hose leak"
+    ],
+    "persianPossibleCauses": [
+      "نشتی هوای دزدی در واشر منیفولد هوا یا شلنگ‌های وکیوم",
+      "کثیفی یا خرابی سنسور مپ (MAP) یا سنسور جریان هوا (MAF)",
+      "کاهش فشار پمپ بنزین یا کثیفی صافی بنزین",
+      "گرفتگی سوزن انژکتورها",
+      "خرابی سوپاپ تهویه کارتر (PCV) یا سوراخ بودن شلنگ بخار روغن"
+    ],
+    "symptoms": [
+      "Rough idling or engine stumbling",
+      "Loss of power during acceleration",
+      "Engine pinging or knocking under load"
+    ],
+    "persianSymptoms": [
+      "لرزش و ریپ زدن در حالت دور آرام (درجا)",
+      "افت شتاب و قدرت در زمان گاز دادن",
+      "صدای ناک (چق چق) موتور هنگام شتاب‌گیری"
+    ],
+    "recommendedAction": "Smoke test intake for vacuum leaks, clean MAP/MAF sensor with electrical contact cleaner, check fuel rail pressure.",
+    "persianRecommendedAction": "بررسی نشتی هوای اضافی در منیفولد ورودی، شستشوی سنسور مپ و سنجش فشار پمپ بنزین روی ریل سوخت."
+  },
+  {
+    "code": "P0172",
+    "system": "Fuel & Air Metering",
+    "persianSystem": "سیستم سوخت و هوای ورودی",
+    "englishDescription": "System Too Rich (Bank 1)",
+    "persianDescription": "مخلوط سوخت و هوا بیش از حد غنی (پر سوخت / خام‌سوزی) است",
+    "severity": "Medium",
+    "persianSeverity": "متوسط",
+    "possibleCauses": [
+      "Leaking or dripping fuel injector",
+      "Excessive fuel pressure (faulty regulator)",
+      "Restricted or heavily dirty engine air filter",
+      "Faulty Coolant Temp Sensor (ECT) reporting cold engine continuously",
+      "Defective Oxygen sensor reading falsely lean"
+    ],
+    "persianPossibleCauses": [
+      "چکه کردن یا نشتی سوزن انژکتور",
+      "فشار بیش از حد بنزین به دلیل خرابی رگلاتور سوخت",
+      "گرفتگی شدید فیلتر هوای موتور",
+      "خرابی سنسور دمای آب (فشنگی آب) و ارسال اطلاعات دمای پایین به ECU",
+      "خرابی سنسور اکسیژن"
+    ],
+    "symptoms": [
+      "Black smoke from exhaust pipe",
+      "Strong gasoline smell",
+      "High fuel consumption and fouled spark plugs"
+    ],
+    "persianSymptoms": [
+      "دود سیاه از اگزوز هنگام شتاب‌گیری",
+      "بوی خام‌سوزی شدید بنزین",
+      "افزایش چشمگیر مصرف سوخت و سیاه شدن سر شمع‌ها"
+    ],
+    "recommendedAction": "Inspect spark plugs, verify ECT sensor live temp readings, inspect air intake filter.",
+    "persianRecommendedAction": "بررسی دمای گزارش شده توسط فشنگی آب، بازرسی شمع‌ها و اطمینان از تمیز بودن فیلتر هوا."
+  },
+  {
+    "code": "P0300",
+    "system": "Ignition & Misfire",
+    "persianSystem": "سیستم جرقه‌زنی و احتراق",
+    "englishDescription": "Random / Multiple Cylinder Misfire Detected",
+    "persianDescription": "عدم احتراق (میس‌فایر) تصادفی در چند سیلندر موتور",
+    "severity": "Critical",
+    "persianSeverity": "بحرانی",
+    "possibleCauses": [
+      "Worn or incorrect spark plugs / incorrect gap",
+      "Failing ignition coil pack or bad spark plug wires",
+      "Low fuel pressure or contaminated bad gasoline",
+      "Low engine compression on one or more cylinders",
+      "Crankshaft position sensor (CKP) signal glitch or dirty reluctor wheel"
+    ],
+    "persianPossibleCauses": [
+      "خرابی یا فرسودگی شمع‌ها یا فیلر نامناسب",
+      "سوختن یا نیم‌سوز شدن کوئل دوبل یا وایرهای شمع",
+      "کیفیت بسیار پایین بنزین یا وجود آب در باک",
+      "افت کمپرس سیلندر (سوختن سوپاپ یا واشر سرسیلندر)",
+      "کثیفی یا نقص در سنسور موقعیت میل‌لنگ (دور موتور)"
+    ],
+    "symptoms": [
+      "Flashing Check Engine Light (danger to catalytic converter)",
+      "Severe engine shuddering and jerking",
+      "Heavy loss of engine power"
+    ],
+    "persianSymptoms": [
+      "چشمک زدن چراغ چک (هشدار آسیب فوری به کاتالیزور)",
+      "لرزش شدید موتور و تک کار کردن",
+      "افت شدید شتاب و شتاب‌گیری همراه با کپ کردن"
+    ],
+    "recommendedAction": "Do not drive at high RPM with flashing MIL. Inspect spark plugs, ignition coil packs, and test cylinder compression.",
+    "persianRecommendedAction": "از رانندگی با دور بالا پرهیز کنید. تعویض شمع‌ها، تست سلامت کوئل و وایر و بررسی کمپرس موتور."
+  },
+  {
+    "code": "P0301",
+    "system": "Ignition & Misfire",
+    "persianSystem": "سیستم جرقه‌زنی و احتراق",
+    "englishDescription": "Cylinder 1 Misfire Detected",
+    "persianDescription": "عدم احتراق (میس‌فایر) در سیلندر شماره ۱",
+    "severity": "High",
+    "persianSeverity": "بالا",
+    "possibleCauses": [
+      "Faulty spark plug in cylinder 1",
+      "Defective ignition coil for cylinder 1",
+      "Clogged fuel injector on cylinder 1",
+      "Low compression on cylinder 1"
+    ],
+    "persianPossibleCauses": [
+      "خرابی شمع سیلندر شماره ۱",
+      "خرابی کوئل یا وایر متصل به سیلندر ۱",
+      "گرفتگی سوزن انژکتور سیلندر ۱",
+      "کاهش کمپرس در سیلندر ۱ (آب‌بندی سوپاپ)"
+    ],
+    "symptoms": [
+      "Engine idle vibration",
+      "Engine hesitation on acceleration"
+    ],
+    "persianSymptoms": [
+      "لرزش محسوس موتور در حالت توقف",
+      "کپ کردن خودرو هنگام شروع حرکت"
+    ],
+    "recommendedAction": "Swap ignition coil / spark plug with cylinder 2 to verify if fault follows component.",
+    "persianRecommendedAction": "جابجایی شمع یا کوئل با سیلندر دیگر جهت اطمینان از قطعه معیوب."
+  },
+  {
+    "code": "P0118",
+    "system": "Sensors & Electrical",
+    "persianSystem": "سنسورها و برق خودرو",
+    "englishDescription": "Engine Coolant Temperature (ECT) Circuit High Input",
+    "persianDescription": "ولتاژ ورودی سنسور دمای آب (فشنگی آب) بالا است (مدار باز / قطعی سوکت)",
+    "severity": "High",
+    "persianSeverity": "بالا",
+    "possibleCauses": [
+      "Disconnected or corroded ECT sensor wiring harness plug",
+      "Open circuit in coolant sensor signal wire",
+      "Defective Coolant Temperature Sensor (green/blue sensor)",
+      "Faulty engine ground wire connection"
+    ],
+    "persianPossibleCauses": [
+      "قطعی سیم‌کشی یا جدا شدن سوکت فشنگی آب (سنسور سبز یا خاکستری)",
+      "سولفاته شدن پین‌های سوکت سنسور دمای آب",
+      "سوختن یا قطع شدن داخلی سنسور دمای آب",
+      "ضعیف بودن اتصال بدنه موتور"
+    ],
+    "symptoms": [
+      "Radiator radiator high-speed cooling fan running constantly",
+      "Hard cold engine starting",
+      "Inaccurate or zero coolant temp gauge on cluster"
+    ],
+    "persianSymptoms": [
+      "یکسره کار کردن فن رادیاتور با دور تند",
+      "بد روشن شدن خودرو در هوای سرد و صبح‌ها",
+      "کار نکردن یا خوابیدن آمپر آب پشت آمپر"
+    ],
+    "recommendedAction": "Check plug connection on ECT sensor near thermostat housing. Verify 5V reference voltage and resistance.",
+    "persianRecommendedAction": "بررسی سوکت فشنگی آب پشت ترموستات، تمیز کردن پین‌ها با اسپری ناهید و تست مقاومت اهمی سنسور."
+  },
+  {
+    "code": "P0105",
+    "system": "Air & Intake",
+    "persianSystem": "ورودی هوا و سنسورها",
+    "englishDescription": "Manifold Absolute Pressure (MAP) Circuit Malfunction",
+    "persianDescription": "اشکال در مدار سنسور فشار مطلق مانیفولد (سنسور مپ MAP)",
+    "severity": "High",
+    "persianSeverity": "بالا",
+    "possibleCauses": [
+      "Damaged or dirty MAP sensor tip",
+      "Loose MAP sensor mounting on intake manifold (vacuum leak)",
+      "Wiring fault or poor 5V power supply to sensor",
+      "Severe carbon buildup on throttle body / manifold port"
+    ],
+    "persianPossibleCauses": [
+      "کثیفی سر سنسور مپ با بخار روغن",
+      "خرابی اورینگ دور سنسور مپ و ورود هوای دزدی",
+      "قطعی در سیم‌های ارتباطی سنسور مپ به ECU",
+      "کربن گرفتگی شدید مجرای هوای منیفولد"
+    ],
+    "symptoms": [
+      "Engine surges or stalls at idle",
+      "Black smoke and heavy fuel odor",
+      "Poor throttle response and bucking"
+    ],
+    "persianSymptoms": [
+      "گاز هرز خوردن یا خاموش شدن ناگهانی در ترافیک",
+      "دود سیاه و بالا رفتن شدید مصرف بنزین",
+      "کپ شدید و تاخیر در پاسخ به پدال گاز"
+    ],
+    "recommendedAction": "Clean MAP sensor with non-chlorinated sensor cleaner, replace sealing O-ring if degraded.",
+    "persianRecommendedAction": "شستشوی دقیق سنسور مپ، تعویض اورینگ لاستیکی سنسور و بررسی ولتاژ در دیاگ."
+  },
+  {
+    "code": "P0505",
+    "system": "Idle Speed Control",
+    "persianSystem": "کنترل دور آرام و استپر",
+    "englishDescription": "Idle Air Control (IAC) System Malfunction",
+    "persianDescription": "اشکال در عملکرد سیستم کنترل دور آرام موتور (استپر موتور / دریچه گاز برقی)",
+    "severity": "Medium",
+    "persianSeverity": "متوسط",
+    "possibleCauses": [
+      "Dirty or jammed Idle Air Control (IAC) stepper motor",
+      "Heavy carbon deposits around throttle valve bore",
+      "Vacuum leak between throttle body and manifold",
+      "Faulty IAC stepper motor electrical winding"
+    ],
+    "persianPossibleCauses": [
+      "کثیفی شدید نوک استپر موتور با دوده و روغن",
+      "جرم گرفتگی محفظه دریچه گاز",
+      "خرابی چرخ‌دنده‌ها یا بوبین داخلی استپر موتور",
+      "نشتی هوا از واشر هوزینگ دریچه گاز"
+    ],
+    "symptoms": [
+      "Engine stalls when coming to a stop or pressing clutch",
+      "Unstable fluctuating idle RPM (hunting idle)",
+      "High idle (above 1500 RPM) after warming up"
+    ],
+    "persianSymptoms": [
+      "خاموش شدن خودرو هنگام ترمزگیری، کلاچ گرفتن یا روشن کردن کولر",
+      "نوسان دور موتور (بالا و پایین رفتن عقربه دور سنج)",
+      "بالا ماندن غیرطبیعی دور موتور (گاز هرز روی ۱۵۰۰ به بالا)"
+    ],
+    "recommendedAction": "Remove and clean throttle body & stepper motor with carburetor cleaner. Re-initialize / adapt stepper with ignition cycle.",
+    "persianRecommendedAction": "باز کردن و شستشوی استپر و نشیمنگاه آن با اسپری کاربراتور و تعریف مجدد استپر با ۳ بار باز و بستن سوئیچ."
+  },
+  {
+    "code": "P0335",
+    "system": "Sensors & Electrical",
+    "persianSystem": "سنسورها و برق خودرو",
+    "englishDescription": "Crankshaft Position Sensor 'A' Circuit Malfunction",
+    "persianDescription": "اشکال در مدار سنسور موقعیت میل‌لنگ (سنسور دور موتور CKP)",
+    "severity": "Critical",
+    "persianSeverity": "بحرانی",
+    "possibleCauses": [
+      "Defective Crankshaft Position (CKP) sensor",
+      "Metal shavings or oil grime on sensor magnetic tip",
+      "Damaged teeth on flywheel reluctor tone ring",
+      "Loose or broken sensor wiring close to exhaust heat"
+    ],
+    "persianPossibleCauses": [
+      "خرابی یا ضعیف شدن آهنربای سنسور دور موتور",
+      "چسبیدن براده آهن یا روغن به نوک سنسور روی فلایویل",
+      "شکستگی یا انحراف دندانه‌های فلایویل",
+      "سوختگی سیم سنسور بر اثر حرارت اگزوز"
+    ],
+    "symptoms": [
+      "Engine cranks but will not start (no spark / no fuel pulse)",
+      "Sudden engine shutoff while driving",
+      "Tachometer needle dead at 0 RPM during cranking"
+    ],
+    "persianSymptoms": [
+      "استارت خوردن طولانی و روشن نشدن کامل موتور",
+      "خاموش شدن ناگهانی موتور در حال حرکت",
+      "حرکت نکردن عقربه دور موتور حین استارت زدن"
+    ],
+    "recommendedAction": "Clean sensor tip of magnetic debris. Check resistance (typically 300-900 ohms depending on ECU system).",
+    "persianRecommendedAction": "تمیز کردن نوک سنسور دور موتور از براده‌های آهن و تست اهمی سنسور."
+  },
+  {
+    "code": "P0130",
+    "system": "Exhaust & Emissions",
+    "persianSystem": "اگزوز و آلایندگی",
+    "englishDescription": "O2 Sensor Circuit Malfunction (Bank 1 Sensor 1)",
+    "persianDescription": "اشکال در مدار سنسور اکسیژن اول (بالادست قبل از کاتالیزور)",
+    "severity": "Medium",
+    "persianSeverity": "متوسط",
+    "possibleCauses": [
+      "O2 sensor internal ceramic element poisoned by lead or silicones",
+      "Damaged sensor heater circuit or blown fuse",
+      "Melted wiring harness against exhaust heat shield",
+      "Exhaust leak upstream of O2 sensor"
+    ],
+    "persianPossibleCauses": [
+      "سوختن یا افت ولتاژ سنسور اکسیژن بالادست",
+      "سوختن المنت گرمکن سنسور اکسیژن یا فیوز مربوطه",
+      "برخورد و ذوب شدن سیم سنسور با لوله داغ اگزوز",
+      "نشتی و ترک در هدرز یا مانیفولد دود قبل از سنسور"
+    ],
+    "symptoms": [
+      "High fuel consumption",
+      "Failed vehicle emissions test",
+      "Sluggish acceleration response"
+    ],
+    "persianSymptoms": [
+      "افزایش مصرف بنزین",
+      "رد شدن در تست معاینه فنی و آلایندگی",
+      "تنبل شدن خودرو در شتاب اولیه"
+    ],
+    "recommendedAction": "Verify live O2 sensor voltage fluctuates actively between 0.1V and 0.9V in live telemetry.",
+    "persianRecommendedAction": "بررسی نوسان منظم ولتاژ سنسور اکسیژن بین ۰.۱ تا ۰.۹ ولت در بخش مانیتورینگ زنده."
+  },
+  {
+    "code": "P0562",
+    "system": "Electrical & Battery",
+    "persianSystem": "برق و باتری",
+    "englishDescription": "System Voltage Low",
+    "persianDescription": "ولتاژ کلی سیستم برق خودرو پایین است (زیر ۱۱.۵ ولت)",
+    "severity": "High",
+    "persianSeverity": "بالا",
+    "possibleCauses": [
+      "Failing alternator / worn carbon brushes or faulty voltage regulator",
+      "Loose or slipping alternator serpentine belt",
+      "Dying or sulfated 12V battery",
+      "Corroded battery terminals or poor chassis ground"
+    ],
+    "persianPossibleCauses": [
+      "خرابی دینام (آلترناتور)، زغال دینام یا آفتامات دینام",
+      "شل بودن یا پارگی تسمه دینام",
+      "خرابی یا فاسد شدن سلول‌های باتری",
+      "سولفاته شدن سرباتری‌ها یا شل بودن اتصال بدنه اصلی"
+    ],
+    "symptoms": [
+      "Dim headlights and flickering dashboard lights",
+      "Battery warning light illuminated",
+      "Loss of power steering assist or sluggish power windows"
+    ],
+    "persianSymptoms": [
+      "کم‌نور شدن چراغ‌های جلو و چشمک زدن آمپرها",
+      "روشن شدن چراغ دینام / باتری در پشت آمپر",
+      "سفت شدن فرمان هیدرولیک یا کندی شیشه‌بالابرها"
+    ],
+    "recommendedAction": "Check alternator charging voltage with MultiGauge (should be 13.8V - 14.4V with engine running).",
+    "persianRecommendedAction": "ولتاژ شارژ دینام را در صفحه گیج مولتی‌گیج بررسی کنید (در حالت روشن باید بین ۱۳.۸ تا ۱۴.۴ ولت باشد)."
+  },
+  {
+    "code": "P0113",
+    "system": "Air & Intake",
+    "persianSystem": "ورودی هوا و سنسورها",
+    "englishDescription": "Intake Air Temperature (IAT) Circuit High Input",
+    "persianDescription": "ولتاژ ورودی سنسور دمای هوای ورودی بالا است (مدار باز)",
+    "severity": "Medium",
+    "persianSeverity": "متوسط",
+    "possibleCauses": [
+      "IAT sensor disconnected or faulty",
+      "Broken wire in intake air temperature sensor circuit",
+      "Integrated MAP/IAT sensor internal failure"
+    ],
+    "persianPossibleCauses": [
+      "جدا بودن یا قطعی سوکت سنسور دمای هوای ورودی",
+      "سوختن ترمیستور داخلی سنسور دمای هوا (در سنسورهای ترکیبی مپ/دما)",
+      "شکستگی یا آسیب به سیم‌کشی سوکت"
+    ],
+    "symptoms": [
+      "Slight hesitation when accelerating in cold weather",
+      "Minor increase in fuel consumption"
+    ],
+    "persianSymptoms": [
+      "کپ جزئی هنگام شتاب‌گیری در هوای سرد",
+      "افزایش جزئی مصرف بنزین"
+    ],
+    "recommendedAction": "Inspect IAT sensor connector and verify temperature sensor value.",
+    "persianRecommendedAction": "بررسی سوکت و سیم‌های سنسور دمای هوا و مشاهده عدد در صفحه گیج."
+  }
+]

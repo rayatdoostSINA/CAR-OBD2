@@ -1,0 +1,6 @@
+[
+  {"code":"P0133","englishDescription":"Oxygen Sensor Circuit Slow Response","persianDescription":"پاسخ کند مدار سنسور اکسیژن","possibleCauses":[{"en":"Aging oxygen sensor","fa":"فرسودگی سنسور اکسیژن"},{"en":"Exhaust leak","fa":"نشتی اگزوز"},{"en":"Damaged wiring","fa":"آسیب سیم‌کشی"}],"severity":"medium"},
+  {"code":"P0420","englishDescription":"Catalyst System Efficiency Below Threshold","persianDescription":"بازدهی کاتالیست کمتر از حد مجاز است","possibleCauses":[{"en":"Oxygen sensor","fa":"سنسور اکسیژن"},{"en":"Catalytic converter","fa":"مبدل کاتالیستی"},{"en":"Exhaust leak","fa":"نشتی اگزوز"}],"severity":"medium"},
+  {"code":"P0300","englishDescription":"Random or Multiple Cylinder Misfire Detected","persianDescription":"احتراق ناقص تصادفی یا چند سیلندر شناسایی شد","possibleCauses":[{"en":"Spark plugs or coils","fa":"شمع‌ها یا کوئل‌ها"},{"en":"Fuel delivery problem","fa":"مشکل سوخت‌رسانی"},{"en":"Vacuum leak","fa":"نشتی خلأ"}],"severity":"high"},
+  {"code":"P0171","englishDescription":"System Too Lean (Bank 1)","persianDescription":"مخلوط سوخت و هوا بیش از حد رقیق است","possibleCauses":[{"en":"Vacuum leak","fa":"نشتی خلأ"},{"en":"Dirty MAF sensor","fa":"کثیفی سنسور MAF"},{"en":"Low fuel pressure","fa":"فشار پایین سوخت"}],"severity":"medium"}
+]

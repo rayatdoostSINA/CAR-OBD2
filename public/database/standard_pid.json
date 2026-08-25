@@ -1,0 +1,13 @@
+[
+  {"id":"rpm","name":"RPM","englishName":"Engine Speed","persianName":"دور موتور","service":"01","pid":"0C","formula":"((A*256)+B)/4","unit":"rpm","min":0,"max":7000,"category":"engine","pollingPriority":1},
+  {"id":"speed","name":"Speed","englishName":"Vehicle Speed","persianName":"سرعت خودرو","service":"01","pid":"0D","formula":"A","unit":"km/h","min":0,"max":220,"category":"motion","pollingPriority":1},
+  {"id":"coolant","name":"Coolant","englishName":"Coolant Temperature","persianName":"دمای آب موتور","service":"01","pid":"05","formula":"A-40","unit":"°C","min":-40,"max":130,"category":"temperature","pollingPriority":1},
+  {"id":"engineLoad","name":"Load","englishName":"Engine Load","persianName":"بار موتور","service":"01","pid":"04","formula":"A*100/255","unit":"%","min":0,"max":100,"category":"engine","pollingPriority":2},
+  {"id":"throttle","name":"Throttle","englishName":"Throttle Position","persianName":"موقعیت دریچه گاز","service":"01","pid":"11","formula":"A*100/255","unit":"%","min":0,"max":100,"category":"air","pollingPriority":2},
+  {"id":"intakeAir","name":"Intake air","englishName":"Intake Air Temperature","persianName":"دمای هوای ورودی","service":"01","pid":"0F","formula":"A-40","unit":"°C","min":-40,"max":100,"category":"temperature","pollingPriority":3},
+  {"id":"map","name":"MAP","englishName":"Manifold Absolute Pressure","persianName":"فشار مانیفولد","service":"01","pid":"0B","formula":"A","unit":"kPa","min":0,"max":255,"category":"air","pollingPriority":2},
+  {"id":"maf","name":"MAF","englishName":"Mass Air Flow","persianName":"دبی هوای ورودی","service":"01","pid":"10","formula":"((A*256)+B)/100","unit":"g/s","min":0,"max":655.35,"category":"air","pollingPriority":2},
+  {"id":"shortFuelTrim","name":"STFT","englishName":"Short-term Fuel Trim","persianName":"اصلاح کوتاه‌مدت سوخت","service":"01","pid":"06","formula":"(A-128)*100/128","unit":"%","min":-100,"max":99.2,"category":"fuel","pollingPriority":2},
+  {"id":"longFuelTrim","name":"LTFT","englishName":"Long-term Fuel Trim","persianName":"اصلاح بلندمدت سوخت","service":"01","pid":"07","formula":"(A-128)*100/128","unit":"%","min":-100,"max":99.2,"category":"fuel","pollingPriority":3},
+  {"id":"battery","name":"Battery","englishName":"Battery Voltage","persianName":"ولتاژ باتری","service":"ATRV","pid":"","formula":"parseFloat(response)","unit":"V","min":0,"max":18,"category":"electrical","pollingPriority":3}
+]

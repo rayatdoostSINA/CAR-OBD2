@@ -1,0 +1,5 @@
+[
+  {"manufacturer":"Generic OBD-II","model":"Automatic profile","year":"1996+","engine":"Any OBD-II compliant engine","protocol":"Auto","supportedPID":["rpm","speed","coolant","engineLoad","throttle","intakeAir","map","maf","shortFuelTrim","longFuelTrim","battery"],"customPID":[]},
+  {"manufacturer":"Iran Khodro","model":"Generic CAN profile","year":"2009+","engine":"Profile selected after capability scan","protocol":"ISO 15765-4 CAN","supportedPID":[],"customPID":[]},
+  {"manufacturer":"SAIPA","model":"Generic K-Line/CAN profile","year":"2005+","engine":"Profile selected after capability scan","protocol":"Auto","supportedPID":[],"customPID":[]}
+]

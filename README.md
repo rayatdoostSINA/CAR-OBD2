@@ -1,40 +1,43 @@
-# MultiGauge OBD Universal
+# 🏎️ MultiGauge OBD-II Telemetry & AI Diagnostic Dashboard
+> **English & فارسی** | Professional Web-based Automotive Telemetry, Diagnostics & AI Assistant
 
-MultiGauge is a mobile-first, bilingual OBD-II monitor and basic diagnostic PWA. It is intentionally read-only by default and does not expose raw CAN transmission, ECU coding, or actuator tests.
+---
 
-## Run locally
+## 🇬🇧 English
 
-1. Install Node.js 22.13 or newer and pnpm.
-2. Run `pnpm install`.
-3. Run `pnpm dev` and open the shown local address.
-4. Choose **Simulator** to test without a vehicle, or select an ELM327 connection method.
+### Overview
+A high-performance, real-time automotive telemetry and diagnostic dashboard built with Next.js, TypeScript, and Tailwind CSS. It communicates directly with standard ELM327 / STN adapters via Web Bluetooth, Web Serial, and WiFi, featuring custom digital clusters, multi-module DTC diagnostics, performance testing, and an AI-powered Master Mechanic assistant powered by Gemini.
 
-Production build: `pnpm build`.
+### ✨ Key Features
+- **Real-Time Digital Clusters & HUDs:**
+  - *Cyber HUD:* High-contrast digital cluster with shift-light LEDs, real-time boost, coolant temp, speed, and tachometer.
+  - *Lufi XS Minimalist Gauge:* Compact multi-metric digital display with responsive needle arcs.
+  - *Sport Twin-Dial Cluster & Matrix Grid:* Customizable PID grid and sports gauge.
+- **Comprehensive DTC Diagnostics:**
+  - Standard SAE J1979 DTC scanning and clearing.
+  - Multi-module scanning support (Engine ECU, Transmission TCU, ABS, Airbag SRS, BCM).
+  - Offline OBD-II Trouble Code Dictionary with search and actionable repair steps.
+- **AI Master Mechanic:**
+  - Intelligent fault code analysis and diagnostic guidance powered by Gemini.
+- **0-100 & Performance Testing:**
+  - High-precision acceleration (0-100 km/h, 400m drag) and braking distance timers.
+- **Universal Hardware Support:**
+  - Web Bluetooth API (BLE ELM327 adapters).
+  - Web Serial API (USB OBD-II Adapters).
+  - Built-in dynamic vehicle physics simulator for testing without hardware.
 
-GitHub Pages build: `pnpm run build:pages`. The included workflow publishes `pages-dist` from the `main` branch to the repository path `/multigauge-obd/`.
+### 🚀 Getting Started
 
-## Architecture
+```bash
+# Clone the repository
+git clone https://github.com/rayatdoostSINA/CAR-OBD2.git
 
-`OBDTransport` → `ELM327Driver` → `DiagnosticProtocol` → PID/DTC engine → React dashboard.
+# Install dependencies
+npm install
 
-- `lib/transports/` contains Simulator, Web Bluetooth, and WiFi implementations.
-- `lib/elm327.ts` owns adapter initialization and command exchange.
-- `lib/diagnostic.ts` owns PID decoding, capability discovery, and DTC operations.
-- `public/database/` contains data-driven PID, DTC, and vehicle profiles.
-- `lib/indexed-db.ts` persists device-local language, theme, and dashboard preferences.
+# Setup environment variables
+cp .env.example .env.local
+# Add your GEMINI_API_KEY in .env.local
 
-Web Bluetooth requires a compatible Chromium browser, HTTPS, and a **BLE** ELM327 adapter. The transport supports common FFE0/FFE1, Nordic UART, and FFF0/FFF1/FFF2 serial profiles, receives segmented notification responses, and serializes ELM327 commands. Classic Bluetooth SPP adapters are not available through Web Bluetooth; use a BLE model or a future native Android build. WiFi browser support depends on the adapter or a local bridge exposing a WebSocket endpoint; browsers cannot open raw TCP sockets.
-
-The responsive layout includes dedicated portrait, tablet/desktop, and short landscape-phone rules. In phone landscape, navigation moves to a narrow side rail and the active cluster fills the available height.
-
-## Native mobile path
-
-The lowest-risk migration is to wrap the existing React UI with Capacitor and replace browser transports with native plugins. Android should support BLE and optionally Bluetooth Classic/RFCOMM for low-cost ELM327 adapters. iOS should target BLE and WiFi adapters through Core Bluetooth and local-network APIs. Both apps need native permission flows, connection lifecycle handling, signed release builds, physical-device/vehicle testing, privacy disclosures, store artwork, and developer accounts.
-
-## Safety
-
-Clearing DTCs resets stored codes but does not repair the underlying fault. Vehicle PID support varies; unsupported readings are presented explicitly and never converted to fake zero values.
-
-## Touch dashboard
-
-The dashboard includes sporty Focus, Dual Gauge, and Digital Grid views with animated needles, scale marks, redline accents, and RPM shift lights. Switch views from the compact control above the gauges. Touch and hold anywhere on the dashboard to enter edit mode, then tap any highlighted value to assign a different supported PID. Layout mode and slot choices are saved offline on the device.
+# Run development server
+npm run dev

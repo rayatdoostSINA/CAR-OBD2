@@ -8,7 +8,7 @@ const projectRoot = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
   root: 'github-pages-src',
-  base: '/multigauge-obd/',
+  base: '/CAR-OBD2/',
   publicDir: '../public',
   resolve: { alias: { '@': resolve(projectRoot) } },
   plugins: [react()],
